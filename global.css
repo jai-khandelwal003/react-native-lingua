@@ -133,6 +133,31 @@
 }
 
 /* ============================================
+   AUTH — sign up / sign in form (see AuthScreen.tsx)
+   ============================================ */
+@utility auth-input {
+  @apply bg-background border-border h-[72px] justify-center rounded-[20px] border px-5;
+  box-shadow: 0 2px 12px rgba(13, 19, 43, 0.04);
+}
+
+@utility auth-button {
+  @apply bg-lingua-deep-purple h-[58px] items-center justify-center rounded-[18px];
+}
+
+@utility auth-social {
+  @apply bg-background border-border h-[54px] flex-row items-center rounded-[18px] border pl-[38px];
+  box-shadow: 0 2px 12px rgba(13, 19, 43, 0.04);
+}
+
+/* ============================================
+   VERIFICATION CODE — one box per digit (see VerificationModal.tsx)
+   Add a border color yourself (border-border / border-lingua-deep-purple).
+   ============================================ */
+@utility otp-box {
+  @apply bg-surface h-14 w-12 items-center justify-center rounded-2xl border-2;
+}
+
+/* ============================================
    SPEECH BUBBLE — rounded label with a small tail (see SpeechBubble.tsx)
    Add a background color and a tail side (left-5 / right-5) yourself.
    ============================================ */

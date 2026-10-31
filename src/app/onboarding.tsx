@@ -1,6 +1,7 @@
 import { SpeechBubble } from "@/components/SpeechBubble";
 import { images } from "@/constants/images";
 import { colors } from "@/theme/colors";
+import { useRouter } from "expo-router";
 import {
   Image,
   StyleSheet,
@@ -19,6 +20,8 @@ const styles = StyleSheet.create({
 });
 
 export default function Onboarding() {
+  const router = useRouter();
+
   return (
     <SafeAreaView style={styles.safeArea}>
       {/* Logo */}
@@ -80,7 +83,7 @@ export default function Onboarding() {
         <TouchableOpacity
           className="btn-primary"
           activeOpacity={0.85}
-          onPress={() => {}}
+          onPress={() => router.push("/sign-up")}
         >
           <Text className="pr-9 text-center font-poppins-semibold text-h3 text-white">
             Get Started
