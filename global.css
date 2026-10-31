@@ -124,3 +124,23 @@
   @apply bg-background rounded-card p-6;
   box-shadow: 0 4px 24px rgba(13, 19, 43, 0.06);
 }
+
+/* ============================================
+   BUTTON — large primary call to action
+   ============================================ */
+@utility btn-primary {
+  @apply bg-lingua-deep-purple h-[72px] justify-center rounded-[28px] px-6;
+}
+
+/* ============================================
+   SPEECH BUBBLE — rounded label with a small tail (see SpeechBubble.tsx)
+   Add a background color and a tail side (left-5 / right-5) yourself.
+   ============================================ */
+@utility speech-bubble {
+  @apply items-center justify-center rounded-[20px] px-5 py-3;
+  box-shadow: 0 4px 16px rgba(13, 19, 43, 0.06);
+}
+
+@utility speech-bubble__tail {
+  @apply absolute -bottom-1.5 h-4 w-4 rotate-45 rounded-[3px];
+}
